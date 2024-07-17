@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css" />
+    <title> INFOPRO</title>
+    <script src="https://kit.fontawesome.com/14273d579a.js" crossorigin="anonymous"></script>
+    <script src="page.js" crossorigin="anonymous"></script>
+    <style>
+        .hover-effect {
+            background-color: #ccccff;
+            transition: background-color 0.3s ease;
+        }
+
+        .hover-effect:hover {
+            background-color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light pb-1 d-flex justify-content-between w-100"
+        style="position: fixed; z-index: 1000;" id="navbar">
+        <div class="mx-5">
+            <a class="navbar-brand" href="#">
+                <img src="INFO.png" alt="" width="100px" height="40px">
+            </a>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+            aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                <li class="nav-item">
+                    <a class="nav-link active fw-bolder" style="color: #000000;" aria-current="page" href="#" id="link">
+                        ACCUEIL
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle fw-bolder" href="#" id="navbarScrollingDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false" id="link">
+                        NOS SPECIALITES
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                        <li><a class="dropdown-item text-dark fw-bold" href="#">PARAMEDICAL</a></li>
+                        <li><a class="dropdown-item text-dark fw-bold" href="#">TIC</a></li>
+                        <li><a class="dropdown-item text-dark fw-bold" href="#">HOTELLERIE
+                                RESTAURATION</a>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item text-dark fw-bold" href="#">STYLISME
+                                MODELISME</a>
+                        </li>
+                        <li><a class="dropdown-item text-dark fw-bold" href="#">ESTHETIQUE
+                                BEAUTE</a>
+                        </li>
+                        <li><a class="dropdown-item text-dark fw-bold" href="#">MACONNERIE</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fw-bolder"
+                        href="http://127.0.0.1:5500/INFOPRO%20LA%20REFERENCE/renseignement.html" id="link">FICHE DE
+                        RENSEIGNEMENT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fw-bolder" href="#" id="link">SPOT PUBLICITAIRE</a>
+                </li>
+            </ul>
+        </div>
+        <div class="d-flex justify-content-end align-items-end mx-5">
+            <button class="btn btn-outline-success text-white fw-bold" type="submit"
+                style="background-color: #1a4b;">contact</button>
+        </div>
+        </div>
+    </nav>
+    <div id="carouselExampleCaptions" class="carousel slide pb-5">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+                aria-label="Slide 5"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active" style="position: relative;">
+                <img src="defilé.jpg" class="d-block w-100" alt="img-fluid" style="height: 600px; position: relative;">
+                <div class=""
+                    style="position: absolute; top: 0px; background-color: rgb(0, 0, 0,0.4); height: 600px;width: 100%;">
+                </div>
+                <div class="carousel-caption d-none d-md-block fw-bold">
+                    <h5>INFOPRO LA REFERENCE</h5>
+                    <p>Institut de formation professionnelle moderne la reference.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="delega.JPG" class="d-block w-100" alt="img-fluid" style="height: 600px; position: relative;">
+                <div class=""
+                    style="position: absolute; top: 0px; background-color: rgb(0, 0, 0,0.4); height: 600px;width: 100%;">
+                </div>
+                <div class="carousel-caption d-none d-md-block fw-bold">
+                    <h5>INFOPRO LA REFERENCE</h5>
+                    <p>Institut de formation professionnelle moderne la reference.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="ministre.JPG" class="d-block w-100" alt="img-fluid"
+                    style="height: 600px; position: relative;">
+                <div class=""
+                    style="position: absolute; top: 0px; background-color: rgb(0, 0, 0,0.4); height: 600px;width: 100%;">
+                </div>
+                <div class="carousel-caption d-none d-md-block fw-bold">
+                    <h5>INFOPRO LA REFERENCE</h5>
+                    <p>Institut de formation professionnelle moderne la reference.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="delegation.JPG" class="d-block w-100" alt="img-fluid"
+                    style="height: 600px; position: relative;">
+                <div class=""
+                    style="position: absolute; top: 0px; background-color: rgb(0, 0, 0,0.4); height: 600px;width: 100%;">
+                </div>
+                <div class="carousel-caption d-none d-md-block fw-bold">
+                    <h5>INFOPRO LA REFERENCE</h5>
+                    <p>Institut de formation professionnelle moderne la reference.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="ecole.JPG" class="d-block w-100" alt="img-fluid" style="height: 600px; position: relative;">
+                <div class=""
+                    style="position: absolute; top: 0px; background-color: rgb(0, 0, 0,0.4); height: 600px;width: 100%;">
+                </div>
+                <div class="carousel-caption d-none d-md-block fw-bold">
+                    <h5>INFOPRO LA REFERENCE</h5>
+                    <p>Institut de formation professionnelle moderne la reference.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <div class="d-flex justify-content-around align-items-center flex-column pb-2">
+        <div class="d-flex justify-content-center flex-wrap align-items-center flex-column pb-5">
+            <h2>NOS SPECIALITES </h2>
+            <h5>Notre institut offre des spécialités divers pour satisfait votre passion</h5>
+        </div>
+        <div class="d-flex justify-content-center flex-wrap align-items-center flex-direction: row;">
+            <div class="elements pt-5 border border-3 shadow-sm p-3 mb-5 bg-white rounded mx-3 d-flex justify-content-center align-items-center flex-column"
+                style="height: 200px; width: 300px; position: relative;">
+                <div class="rounded-circle border-1  d-flex justify-content-center align-items-center shadow-sm p-3 border border-warning bg-white hover-effect"
+                    style="position: absolute; top: -25px; left: 43%; height: 50px; width: 50px;">
+                    1
+                </div>
+                <h5 class="d-flex justify-content-center align-items-center">PARAMEDICAL</h5>
+                <h6 class="d-flex justify-content-center align-items-center"> Qui comprends plusieurs fillières :
+                </h6>
+                <p class="d-flex justify-content-center align-items-center">Délégué médical, Auxillière en pharmacie,
+                    Auxillière de vie, Assistant kinésitherapie et Sécretariat
+                    médical</p>
+            </div>
+            <div class="elements pt-5 border border-3 shadow-sm p-3 mb-5 bg-white rounded mx-3 d-flex justify-content-center align-items-center flex-column"
+                style="height: 200px; width: 300px; position: relative;">
+                <div class="rounded-circle border-1  d-flex justify-content-center align-items-center shadow-sm p-3 border border-warning bg-white"
+                    style="position: absolute; top: -25px; left: 43%; height: 50px; width: 50px;">
+                    2
+                </div>
+                <h5 class="d-flex justify-content-center align-items-center">TIC</h5>
+                <h6 class="d-flex justify-content-center align-items-center"> Qui comprends plusieurs fillières :</h6>
+                <p class="d-flex justify-content-center align-items-center">Web design, Graphisme de production, Montage
+                    audio/vidéo, Sécretariat bureautique, Sécretariat comptable, Sécretariat de direction</p>
+            </div>
+            <div class="elements pt-5 border border-3 flex-wrap shadow-sm p-3 mb-5 bg-white rounded mx-3 d-flex justify-content-center align-items-center flex-column"
+                style="height: 200px; width: 300px; position: relative;">
+                <div class="rounded-circle border-1  d-flex justify-content-center align-items-center shadow-sm p-3 border border-warning bg-white"
+                    style="position: absolute; top: -25px; left: 43%; height: 50px; width: 50px;">
+                    3
+                </div>
+                <h5 class="d-flex justify-content-center align-items-center">STYLISME/MODELISME</h5>
+                <h6 class="d-flex justify-content-center align-items-center"> Qui comprends plusieurs fillières :</h6>
+                <p class="d-flex justify-content-center align-items-center">Stylisme modélisme et couture</p>
+            </div>
+            <div class="elements pt-5 border border-3 flex-wrap shadow-sm p-3 mb-5 bg-white rounded mx-3 d-flex justify-content-center align-items-center flex-column"
+                style="height: 200px; width: 300px; position: relative;">
+                <div class="rounded-circle border-1  d-flex justify-content-center align-items-center shadow-sm p-3 border border-warning bg-white"
+                    style="position: absolute; top: -25px; left: 43%; height: 50px; width: 50px;">
+                    4
+                </div>
+                <h5 class="d-flex justify-content-center align-items-center">HOTELLERIE/RESTAURATION</h5>
+                <h6 class="d-flex justify-content-center align-items-center"> Qui comprends plusieurs fillières : </h6>
+                <p class="d-flex justify-content-center align-items-center">Hottélérie et Restauration</p>
+                </h6>
+            </div>
+            <div class="elements pt-5 border border-3 flex-wrap shadow-sm p-3 mb-5 bg-white rounded mx-3 d-flex justify-content-center align-items-center flex-column"
+                style="height: 200px; width: 300px; position: relative;">
+                <div class="rounded-circle border-1  d-flex justify-content-center align-items-center shadow-sm p-3 border border-warning bg-white"
+                    style="position: absolute; top: -25px; left: 43%; height: 50px; width: 50px;">
+                    5
+                </div>
+                <h5 class="d-flex justify-content-center align-items-center">ESTHETIQUE/BEAUTE</h5>
+                <h6 class="d-flex justify-content-center align-items-center">Qui comprends plusieurs fillières : </h6>
+                <p class="d-flex justify-content-center align-items-center">Esthétique et beauté</p>
+            </div>
+            <div class="elements pt-5 border border-3 flex-wrap shadow-sm p-3 mb-5 bg-white rounded mx-3 d-flex justify-content-center align-items-center flex-column"
+                style="height: 200px; width: 300px; position: relative;">
+                <div class="rounded-circle border-1  d-flex justify-content-center align-items-center shadow-sm p-3 border border-warning bg-white"
+                    style="position: absolute; top: -25px; left: 43%; height: 50px; width: 50px;">
+                    6
+                </div>
+                <h5 class="d-flex justify-content-center align-items-center">MACONNERIE</h5>
+                <h6 class="d-flex justify-content-center align-items-center">Qui comprends la fillière de : </h6>
+                <p class="d-flex justify-content-center align-items-center">Maçonnerie</p>
+            </div>
+        </div>
+    </div>
+    <div class="d-flex flex-wrap align-items-center pt-3 pb-2" style="background-color: #1a4d;">
+        <div class="d-flex col-xs-12 col-sm-12 col-md-6 col-lg-6 align-items-end flex-column pt-3 pb-3">
+            <img src="directeur.JPG" alt="" style="width: 250px; height: 350px;" class=" border border-1 rounded">
+            <h6 class="pt-2 text-white">Mr le Directeur NEMCHE Benjamin</h6>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 d-flex justify-content-center align-items-center flex-column  px-5"
+            style="width: 400px;">
+            <h5 class="" style="color: #ffffff; font-family: Georgia, 'Times New Roman', Times, serif;">INFOPRO LA
+                REFERENCE
+            </h5>
+            <p class="text-white d-flex justify-content-center align-items-end"> Institut de formation professionnelle
+                agrée par arrété N°229/MINEFOP/SG//DFOP/SDGSF/SACD DU
+                25/07/2016. Infopro vous offre plusieurs services professionnels et facilite votre insertion dans la
+                vie
+                professionnel, et garantir un emploi stable pour les meilleurs.</p>
+            <button class="btn btn-outline-success class=" style="color: #ffffff; background-color: #e42e29;">S'incrire
+                à infopro</button>
+        </div>
+    </div>
+    <div class="d-flex justify-content-center align-items-center">
+        <div class="d-flex justify-content-center align-items-center"
+            style="height: 450px; width: 400px; padding: 40px; background-image: url('cam.png'); background-size: contain; background-repeat: no-repeat; position: relative;">
+            <div style="position: absolute; top: 49%; left: -28%;">
+                <img src="douala_.png" alt="" style="height: 130px; width: 250px; padding-right: 0px;">
+            </div>
+            <div style="position: absolute; top: 38%; left: -26.5%;">
+                <img src="baf_.png" alt="" style="height: 130px; width: 250px; padding-right: 0px;">
+            </div>
+        </div>
+    </div>
+    <div style="width: 100%; height: 10px;">
+        <hr class="bg-dark">
+    </div>
+    <div class="container d-flex justify-content-center align-items-center pt-3">
+        <div class="sb-container d-flex justify-content-center align-items-center flex-column">
+            <div class="row pb-5">
+                <h1 style="font-family: Georgia, 'Times New Roman', Times, serif">Nos Partenaires</h1>
+            </div>
+            <div class="row">
+                <div id="carouselExampleSlidesOnly" class="carousel slide " data-bs-ride="carousel">
+                    <div class="carousel-inner pb-5">
+                        <div class="carousel-item active ">
+                            <img src="nobisoft.webp" class="img-fluid mx-5" alt="..."
+                                style="height: 4rem; width: 12rem;">
+                            <img src="ph.JPG" class="img-fluid mx-5" alt="..." style="height: 5rem; width: 7rem;">
+                            <img src="nobisoft.webp" class="img-fluid mx-5" alt="..."
+                                style="height: 4rem; width: 12rem;">
+                            <img src="fanalex.jpg" class="img-fluid mx-5" alt="..." style="height: 6rem; width: 12rem;">
+                        </div>
+                        <div class="carousel-item mx-5">
+                            <img src="nobisoft.webp" class="img-fluid mx-5" alt="..."
+                                style="height: 4rem; width: 12rem;">
+                            <img src="ph.JPG" class="img-fluid mx-5" alt="..." style="height: 5rem; width: 7rem;">
+                            <img src="nobisoft.webp" class="img-fluid mx-5" alt="..."
+                                style="height: 4rem; width: 12rem;">
+                            <img src="fanalex.jpg" class="img-fluid mx-5" alt="..." style="height: 6rem; width: 12rem;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="d-flex justify-content: space-around; align-items-center bg-dark pt-5 flex-wrap"
+        style="height: auto; width: 100%;">
+        <div class="container">
+            <div class=" d-flex flex-wrap align-items-center bg-dark  ml-auto">
+                <div
+                    class="col-xs-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center flex-column flex-wrap align-items-center bg-dark">
+                    <img src="INFO.png" alt="" style="height: 40px; width: 100px;">
+                    <p class="d-flex justify-content-center align-items-center flex-direction:row; mx-2 text-white"
+                        style="padding:30px; height: 10px; width: 10px;">
+                        <i class="bi-facebook mx-2 text-white" data-bs-toggle="tooltip" title="facebook"
+                            title="facebook" style="font-size: 2rem; color: rgb(9, 12, 19);"></i>
+                        <i class="bi-youtube mx-2 text-white" data-bs-toggle="tooltip" title="youtube" title="youtube"
+                            style="font-size: 2rem; color: rgb(9, 12, 19);"></i>
+                        <i class="bi-linkedin mx-2 text-white" data-bs-toggle="tooltip" title="linkedin"
+                            title="linkedin" style="font-size: 2rem; color: rgb(9, 12, 19);"></i>
+                    </p>
+                    <p class="text-white">Creer en 2016 infopro offre un emploi à un taux élevé de ces apprenants.</p>
+                </div>
+                <div
+                    class="col-xs-12 col-sm-12 col-md-6 col-lg-3 d-flex justify-content-center align-items-start bg-dark flex-wrap flex-column text-white">
+                    <h5 class="mx-5">Liens utiles</h5><br>
+                    <a class="text-white link-opacity-0 mx-5" href="#" alt="">Spécialités</a><br>
+                    <a class="text-white link-opacity-0 mx-5" href="#" alt="">contact</a><br>
+                    <a class="text-white link-opacity-0 mx-5" href="#" alt="">Fiche de renseignement</a>
+                </div>
+                <div
+                    class="col-xs-12 col-sm-12 col-md-6 col-lg-3 d-flex justify-content-center align-items-start bg-dark  flex-column flex-wrap text-white">
+                    <h5 class="mx-5">Nous contacter</h5>
+                    <p class="text-white link-opacity-0 mx-5" alt="">Nkongsamba (pont cassé Tel: (+237) 699 329 343 /
+                        674 004 597)</p>
+                    <p class="text-white link-opacity-0 mx-5" alt="">Douala (campus logbessou pk 14 Tel: (+237) 699 329
+                        343 / 674 004 597)</p>
+                </div>
+                <div
+                    class="col-xs-12 col-sm-12 col-md-6 col-lg-3 d-flex justify-content-center align-items-start bg-dark  flex-column flex-wrap text-white">
+                    <h5 class="mx-5">Nous contacter</h5>
+                    <p class="text-white link-opacity-0 mx-5" alt="">Bafoussam (total d'en bas Tel: (+237) 690 455 448 /
+                        672 215 266)</p>
+                    <p class="text-white link-opacity-0 mx-5" alt="">Dschang (immeuble commercial bank Tel: (+237) 696
+                        886 310 / 675 414 465)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 d-flex justify-content-center align-items-center bg-dark pb-5 pt-5 text-white">
+        <h5>Copyriht (c) 2024.infoprolareference</h5>
+    </div>
+
+    <script>
+        document.addEventListener('scroll', () => {
+            if (window.scrollY > 0) {
+                document.getElementById("navbar").style.backgroundColor = "#ffffff";
+                document.getElementsById("link").style.color = "black";
+            } else {
+                document.getElementById("navbar").style.backgroundColor = "transparent";
+                document.getElementsById("link").style.color = "#ffffff";
+            }
+
+        })
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script>
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+    </script>
+    <script>
+        var myModal = document.getElementById('myModal')
+        var myInput = document.getElementById('myInput')
+
+        myModal.addEventListener('shown.bs.modal'), function () {
+            myInput.focus()
+        }
+    </script>
+</body>
+
+</html>

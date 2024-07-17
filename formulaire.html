@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css" />
+    <title> FORMULAIRE</title>
+    <script src="https://kit.fontawesome.com/14273d579a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light pb-1">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="INFO.png" alt="" width="100px" height="40px">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item">
+                        <a class="nav-link active text-primary" aria-current="page" href="#">ACCUEIL</a>
+                    </li>
+                    <li class="nav-item dropdown text-primary">
+                        <a class="nav-link dropdown-toggle text-primary" href="#" id="navbarScrollingDropdown"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            NOS SERVICES
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                            <li><a class="dropdown-item text-primary" href="#">PARAMEDICAL</a></li>
+                            <li><a class="dropdown-item text-primary" href="#">TIC</a></li>
+                            <li><a class="dropdown-item text-primary" href="#">HOTELLERIE RESTAURATION</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item text-primary" href="#">STYLISME MODELISME</a></li>
+                            <li><a class="dropdown-item text-primary" href="#">ESTHETIQUE BEAUTE</a></li>
+                            <li><a class="dropdown-item text-primary" href="#">MACONNERIE</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-primary" href="#">FICHE DE RENSEIGNEMENT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-primary" href="#">SPOT PUBLICITAIRE</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <button class="btn btn-outline-success" type="submit"
+                        style="color: rgba(170, 35, 17, 0.733);">contact</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="col-12 d-flex justify-content-start align-items-start pt-4 px-5"
+        style="background-image: url('fond_n.jpg'); height: 520px; background-repeat: no-repeat; background-size: cover; position: fixed;">
+        <!-- <div class="row">
+            <div class="col-6 px-5 pt-5" style="position: relative;">
+                <p class="pt-5 d-flex border border-2 shadow-sm p-3 rounded"
+                    style="height: 600px; width: 520px; position: absolute; top: 140px; right: 50px;"> INSCRIPTION</p>
+            </div> -->
+        <div class="col-lg-6  col-md-12  border border-2 shadow-sm p-3 rounded"
+            style="height: 450px; width: 540px; background-color: #cccc;">
+            <form action="" class="row gy-4 mx-5 " style="height: auto; width: 80%;" id="monFormulaire">
+                <div class="col-6 text-primary">
+                    <label for="prenom" class="form-label mb-0 text-dark fw-bold">Prenom</label>
+                    <input type="text" class="form-control mb-2" name="prenom" id="prenom" placeholder="prenom"
+                        minlength="3" required>
+                    <label for="date" class="form-label text-dark mb-0 fw-bold">Date de naissance</label>
+                    <input type="date" class="form-control" name="date" id="date" placeholder="date de naissance"
+                        required>
+                    <!-- <p>choisisez votre genre :<br></p>
+                    <input type="checkbox" name="homme" id="homme" checked="checked">
+                    <label for="homme" class="form-label text-primary">Masculin </label><br>
+                    <input type="checkbox" name="femme" id="femme">
+                    <label for="femme" class="form-label text-primary">Féminin</label> -->
+                </div>
+                <div class="col-6 text-primary pb-1">
+                    <label for="nom" class="form-label text-dark mb-0 fw-bold">Nom</label>
+                    <input type="text" class="form-control mb-2" name="nom" id="nom" placeholder="nom" minlength="3"
+                        required>
+                    <label for="email" class="form-label text-dark mb-0 fw-bold">email</label>
+                    <input type="text" class="form-control" name="email" id="email" placeholder="nom@gmail.com"
+                        autocomplete="email" pattern="[a-zA-Z0-9.]+@[a-zA]+\.[a-zA]{2,}" required>
+                    <!-- <p>Quel age avez-vous ?<br></p>
+                    <input type="radio" name="age" value="mineur" id="mineur" checked="checked">
+                    <label for="mineur" class="form-label">- 18 ans </label><br>
+                    <input type="radio" name="age" id="majeur" value="majeur">
+                    <label for="majeur" class="form-label">+ 18 ans</label> -->
+                </div>
+                <div class="col-12 text-dark fw-bold">
+                    <p>
+                        <label for="pays">
+                            Selectionnez votre pays :<br>
+                        </label>
+                        <select name="pays" id="pays" style="width: 189px;" required>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="pays">Selectionnez votre spécialité :<br></label>
+                        <select name="filiere" id="filiere" style="width: 152px;" required>
+                            <optgroup label=" Paramédical">
+                                <option value="delegue medical">Délégué médical</option>
+                                <option value="auxiliaire">Auxilliaire en pharmacie</option>
+                                <option value="soins infirmier">Auxilliaire de vie</option>
+                                <option value="kinésithérapie">Assistant kinésitherapie</option>
+                                <option value="Sécretariat">Sécretariat médical</option>
+                            </optgroup>
+                            <optgroup label="TIC">
+                                <option value="graphisme">Graphisme de production</option>
+                                <option value="montage">Montage audio/visuel</option>
+                                <option value="Sécretariat bu">Sécretariat bureautique</option>
+                                <option value="Sécretariat di">Sécretariat de direction</option>
+                                <option value="web">Web design</option>
+                                <option value="web m">Web master</option>
+                            </optgroup>
+                            <optgroup label="Hotéllerie / restauration">
+                                <option value="hr">Hotéllerie / restauration</option>
+                            </optgroup>
+                            <optgroup label="Stylisme / modélisme">
+                                <option value="stylisme">Stylisme</option>
+                                <option value="couture">Couture</option>
+                            </optgroup>
+                            <optgroup label="Esthétique / beauté">
+                                <option value="coifure">Esthétique / beauté</option>
+                            </optgroup>
+                            <optgroup label="Maçonnérie">
+                                <option value="Maçonnérie">Maçonnérie</option>
+                            </optgroup>
+                        </select>
+                    </p>
+                    <label for="message" class="form-labe text-dark fw-bold">Commentaires</label>
+                    <textarea class="form-control" name="message" id="message" rows="3"
+                        placeholder="laissez votre Commentaires ici" maxlength="500"></textarea>
+                </div>
+                <div class="col-6">
+                    <button type="reset" class="btn btn-primary w-100" id="effacer">EFFACER</button>
+                </div>
+                <div class="col-6">
+                    <button type="submit" class="btn btn-primary w-100" id="envoyer">ENVOYER</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    </div>
+    <script>
+        async function getData() {
+            const url = "http://api.geonames.org/countryInfoJSON?username=bilex";
+            try {
+                const response = await fetch(url);
+                if (!response.ok) {
+                    throw new Error(`Response status: ${response.status}`);
+                }
+
+                const json = await response.json();
+                console.log(json, "bonsoir")
+                return json.geonames
+            } catch (error) {
+                console.error(error.message);
+                return []
+            }
+        }
+        const pays = document.getElementById("pays");
+        console.log(pays)
+        getData().then((geonames) => {
+            geonames.map((item) => {
+                const option = document.createElement('option')
+                option.value = item.countryName
+                option.innerHTML = item.countryName
+                pays.appendChild(option);
+            })
+        })
+            .catch((error) => console.log(error))
+
+        getData()
+        document.getElementById('monFormulaire').addEventListener('submit', function (event) {
+            event.preventDefault(); // Prevent the form from submitting
+            var nom = document.getElementById("monFormulaire").elements["nom"].value;
+            var email = document.getElementById("monFormulaire").elements["email"].value;
+            var prenom = document.getElementById("monFormulaire").elements["prenom"].value;
+            var date = document.getElementById("monFormulaire").elements["date"].value;
+            var pays = document.getElementById("monFormulaire").elements["pays"].value;
+            var filiere = document.getElementById("monFormulaire").elements["filiere"].value;
+            var message = document.getElementById("monFormulaire").elements["message"].value;
+            console.log("Nom: " + nom);
+            console.log("Email: " + email);
+            console.log("Prenom: " + prenom);
+            console.log("Date: " + date);
+            console.log("Pays: " + pays);
+            console.log("Filière: " + filiere);
+            console.log("Message: " + message);
+            // Perform form validation
+            if (nom === '') {
+                alert('Please enter your nom.');
+                return; // Stop the execution
+            }
+            if (prenom === '') {
+                alert('Please enter your prenom.');
+                return; // Stop the execution
+            }
+            if (date === '') {
+                alert('Please enter your date.');
+                return; // Stop the execution
+            }
+            if (pays === '') {
+                alert('Please enter your pays.');
+                return; // Stop the execution
+            }
+            if (filiere === '') {
+                alert('Please enter your filiere.');
+                return; // Stop the execution
+            }
+            function validateEmail(email) {
+                const re = /^[a-zA-Z0-9.]+@[a-zA]+\.[a-zA]{2,}$/;
+                return re.test(email);
+            }
+
+            if (validateEmail(email)) {
+                console.log(email + " est valide");
+            } else {
+                console.log(email + " n'est pas valide");
+            }
+
+            function validate() {
+                const $result = $("#result");
+                const email = $("#email").val();
+                $result.text("");
+
+                if (validateEmail(email)) {
+                    $result.text(email + " est valide");
+                    $result.css("color", "blue");
+                } else {
+                    $result.text(email + " n'est pas valide");
+                    $result.css("color", "red");
+                }
+
+                return false;
+            }
+            if (nom.lenght < 3) {
+                alert('le nombre de caractere est inferieur a 3');
+                return;
+            }
+            if (prenom.lenght < 3) {
+                alert('le nombre de caractere est inferieur a 3');
+                return;
+            }
+        })
+
+        // function afficherNom() {
+        //     let Prenom = document.getElementById("prenom");
+        //     let prenom = Nom.value;
+        //     console.log(prenom);
+        // }
+        function getpays(val) {
+            $.ajax({
+                type: "POST",
+                url: "{geonames: Array(250)}", // Remplacez par l'URL de votre script PHP
+                data: '{geonames: Array(250)}=' + val,
+                success: function (data) {
+                    $("#pays").html(data); // Mettez à jour la liste des villes
+                }
+            });
+        }
+        // async function getData() {
+        //     const url = "http://api.geonames.org/countryInfoJSON?username=bilex";
+        //     try {
+        //         const reponse = await fetch(url);
+        //         if (!reponse.ok) {
+        //             throw new Error(`Erreur HTTP : ${reponse.status}`);
+        //         }
+        //         const json = await reponse.json();
+        //         console.log(json)
+        //         return json.geonames;
+        //     } catch (error) {
+        //         console.error(`Impossible d'obtenir les produits : ${error}`);
+        //         return []
+        //     }
+        // }
+
+        // tableau = await getData();
+        // console.log(tableau)
+        // tableau.then((json) => {
+        //     $select.append(`<option value="${json.countryName}">${json.countryName}</option>`);
+        // })
+
+
+    </script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script>
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+    </script>
+    <script>
+        var myModal = document.getElementById('myModal')
+        var myInput = document.getElementById('myInput')
+
+        myModal.addEventListener('shown.bs.modal'), function () {
+            myInput.focus()
+        }
+    </script>
+</body>
+
+</html>
