@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light pb-5 d-flex justify-content-between w-100"
+    <nav class="navbar navbar-expand-lg navbar-light pb-1 d-flex justify-content-between w-100"
         style="position: fixed; z-index: 1000;" id="navbar">
         <div class="mx-5">
             <a class="navbar-brand" href="#">
@@ -28,81 +28,92 @@
         <div class="collapse navbar-collapse" id="navbarScroll">
             <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
                 <li class="nav-item">
-                    <a class="nav-link active fw-bold" aria-current="page" href="#" id="link">
+                    <a class="nav-link active fw-bolder" style="color: #000000;" aria-current="page"
+                        href="http://127.0.0.1:5500/INFOPRO-LA-REFERENCE/index.html" id="link">
                         ACCUEIL
                     </a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle fw-bold" href="#" id="navbarScrollingDropdown" role="button"
-                        data-bs-toggle="dropdown" aria-expanded="false" id="link">
+                    <a class="nav-link dropdown-toggle fw-bolder text-dark" href="#" id="navbarScrollingDropdown"
+                        role="button" data-bs-toggle="dropdown" aria-expanded="false" id="link">
                         NOS SPECIALITES
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                        <li><a class="dropdown-item text-dark fw-bold" href="#">PARAMEDICAL</a></li>
-                        <li><a class="dropdown-item text-dark fw-bold" href="#">TIC</a></li>
-                        <li><a class="dropdown-item text-dark fw-bold" href="#">HOTELLERIE
+                        <li><a class="dropdown-item text-dark fw-bold"
+                                href="http://127.0.0.1:5500/INFOPRO-LA-REFERENCE/Param%C3%A9dical.html">PARAMEDICAL</a>
+                        </li>
+                        <li><a class="dropdown-item text-dark fw-bold"
+                                href="http://127.0.0.1:5500/INFOPRO-LA-REFERENCE/tic.html">TIC</a></li>
+                        <li><a class="dropdown-item text-dark fw-bold"
+                                href="http://127.0.0.1:5500/INFOPRO-LA-REFERENCE/hotell%C3%A9rie.html">HOTELLERIE
                                 RESTAURATION</a>
                         </li>
                         <li>
                             <hr class="dropdown-divider">
                         </li>
-                        <li><a class="dropdown-item text-dark fw-bold" href="#">STYLISME
+                        <li><a class="dropdown-item text-dark fw-bold"
+                                href="http://127.0.0.1:5500/INFOPRO-LA-REFERENCE/stylisme.html">STYLISME
                                 MODELISME</a>
                         </li>
-                        <li><a class="dropdown-item text-dark fw-bold" href="#">ESTHETIQUE
+                        <li><a class="dropdown-item text-dark fw-bold"
+                                href="http://127.0.0.1:5500/INFOPRO-LA-REFERENCE/esthetique.html">ESTHETIQUE
                                 BEAUTE</a>
                         </li>
-                        <li><a class="dropdown-item text-dark fw-bold" href="#">MACONNERIE</a></li>
+                        <li><a class="dropdown-item text-dark fw-bold"
+                                href="http://127.0.0.1:5500/INFOPRO-LA-REFERENCE/ma%C3%A7onnerie.html">MACONNERIE</a>
+                        </li>
                     </ul>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link fw-bold" href="#" id="link">FICHE DE RENSEIGNEMENT</a>
+                    <a class="nav-link fw-bolder text-dark"
+                        href="http://127.0.0.1:5500/INFOPRO-LA-REFERENCE/Renseignement.html" id="link">FICHE DE
+                        RENSEIGNEMENT</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link fw-bold" href="#" id="link">SPOT PUBLICITAIRE</a>
+                    <a class="nav-link fw-bolder text-dark" href="#" id="link">SPOT PUBLICITAIRE</a>
                 </li>
             </ul>
         </div>
         <div class="d-flex justify-content-end align-items-end mx-5">
-            <button class="btn btn-outline-success text-white fw-bold" type="submit"
-                style="background-color: #1a4b;">contact</button>
+            <a href="http://127.0.0.1:5500/INFOPRO-LA-REFERENCE/formulaire.html">
+                <button class="btn btn-outline-success text-white fw-bold d-none d-md-block" type="submit"
+                    style="background-color: #1a4b;">Contact</button></a>
         </div>
         </div>
     </nav>
-    <div class="d-flex  flex-direction: row; pt-5" style="height: 400px;">
-        <div class="d-flex  flex-column pt-5" style="margin-left: 09%;">
-            <h5 class="col-6 col-lg-6 text-white fw-bold border-1 rounded shadow-sm p-3 text-center"
-                style="width: 60%; background-color: #3a696f; margin-left: auto;">DOSSIER
-                D'INSCRIPTION
-            </h5>
-            <p class="">
+    <div class="d-flex  flex-direction: row; pt-5 justify-content-center" style="height: 400px;">
+        <div class="d-flex  flex-column pt-5 justify-content-center" style="margin-left: 15%;">
+
+            <p class="d-flex justify-content-end">
             <ul>
-                <li> Une demande précisant le choix de la filière</li>
-                <li>02 copies du CV (Curriculum vitae)</li>
-                <li>02 Photocopies du diplome ou toute autre pièce justifiant le niveau requis</li>
-                <li>02 photocopies de l'acte de naissance</li>
-                <li>02 photocopies de la CNI</li>
-                <li>04 photos d'identité 4x4 couleur (récente)</li>
-                <li> 02 Enveloppes A4 </li>
-                <li> 01 Rame de format A4.</li>
+                <i class="fas fa-check-circle"></i> Une demande précisant le choix de la filière<br>
+                <i class="fas fa-check-circle"></i>02 copies du CV (Curriculum vitae)<br>
+                <i class="fas fa-check-circle"></i>02 Photocopies du diplome ou toute autre pièce justifiant le
+                niveau requis<br>
+                <i class="fas fa-check-circle"></i>02 photocopies de l'acte de naissance<br>
+                <i class="fas fa-check-circle"></i>02 photocopies de la CNI<br>
+                <i class="fas fa-check-circle"></i>04 photos d'identité 4x4 couleur (récente)<br>
+                <i class="fas fa-check-circle"></i> 02 Enveloppes A4<br>
+                <i class="fas fa-check-circle"></i> 01 Rame de format A4.<br>
             </ul>
             </p>
         </div>
-        <div class="col-6 d-flex justify-content-center align-items-center pt-5">
+        <div class="col-6 d-flex justify-content-start align-items-center pt-5">
             <img src="eleve.jpg" alt="image-fluid" style="width: 500px; height: 700px;" class="pt-2">
         </div>
     </div>
     <!-- <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-offset="0" class="scrollspy-example" tabindex="0"> -->
     <div class="table-responsive pt-2 mx-0 d-flex justify-content-center w-90" style="height: auto;">
         <table class="table table-bordered table-hover table-striped" style="width: 80%; height: 500px;">
-            <caption class="fw-bold pt-2 text-center bg-info text-white">SPECIALITES ET FRAIS DE SCOLARITE 2024
+            <caption class="fw-bold pt-2 text-center text-white" style="background-color: #1a4d;">SPECIALITES ET FRAIS
+                DE SCOLARITE 2024
             </caption>
             <thead>
                 <tr>
-                    <th scope="col-3" class="text-center bg-info">SPECIALITES</th>
-                    <th scope="col-3" class="text-center bg-info">NIVEAUX REQUIS</th>
-                    <th scope="col-3" class="text-center bg-info">INSCRIPTIONS</th>
-                    <th scope="col-3" class="text-center bg-info">FRAIS DE SCOLARITE</th>
+                    <th scope="col-3" class="text-center" style="background-color: #1a4d;">SPECIALITES</th>
+                    <th scope="col-3" class="text-center" style="background-color: #1a4d;">NIVEAUX REQUIS</th>
+                    <th scope="col-3" class="text-center" style="background-color: #1a4d;">INSCRIPTIONS</th>
+                    <th scope="col-3" class="text-center" style="background-color: #1a4d;">FRAIS DE SCOLARITE</th>
                 </tr>
             </thead>
             <tbody>
@@ -247,6 +258,83 @@
         <!-- <div class="overflow-auto">
         <!-- Your content here -->
     </div>
+    <div class="d-flex flex-wrap align-items-center pt-3 pb-2" style="background-color: #1a4d;">
+        <div class="d-flex col-12 col-xs-12 col-sm-12 col-md-6 col-lg-6 align-items-end flex-column pt-3 pb-3">
+            <img src="directeur.JPG" alt="" style="width: 250px; height: 350px;" class=" border border-1 rounded">
+            <h6 class="pt-2 text-white">Mr le Directeur NEMCHE Benjamin</h6>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-12 col-md-6 col-lg-6 d-flex justify-content-center align-items-center flex-column  px-5"
+            style="width: 400px;">
+            <h5 class="" style="color: #ffffff; font-family: Georgia, 'Times New Roman', Times, serif;">INFOPRO LA
+                REFERENCE
+            </h5>
+            <p class="text-white d-flex justify-content-center align-items-end"> Institut de formation professionnelle
+                agrée par arrété N°229/MINEFOP/SG//DFOP/SDGSF/SACD DU
+                25/07/2016. Infopro vous offre plusieurs services professionnels et facilite votre insertion dans la
+                vie
+                professionnel, et garantir un emploi stable pour les meilleurs.</p>
+            <a href="http://127.0.0.1:5500/INFOPRO-LA-REFERENCE/formulaire.html">
+                <button class="btn btn-outline-success fw-bolder"
+                    style="color: #ffffff; background-color: #e42e29;">Contact</button></a>
+        </div>
+    </div>
+    <div class="d-flex justify-content: space-around; align-items-center bg-dark pt-5 flex-wrap"
+        style="height: auto; width: 100%;">
+        <div class="container">
+            <div class=" d-flex flex-wrap align-items-center bg-dark  ml-auto">
+                <div
+                    class="col-xs-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center flex-column flex-wrap align-items-center bg-dark">
+                    <img src="INFO.png" alt="" style="height: 40px; width: 100px;">
+                    <p class="d-flex justify-content-center align-items-center flex-direction:row; mx-2 text-white"
+                        style="padding:30px; height: 10px; width: 10px;">
+                        <i class="bi-facebook mx-2 text-white" data-bs-toggle="tooltip" title="facebook"
+                            title="facebook" style="font-size: 2rem; color: rgb(9, 12, 19);"></i>
+                        <i class="bi-youtube mx-2 text-white" data-bs-toggle="tooltip" title="youtube" title="youtube"
+                            style="font-size: 2rem; color: rgb(9, 12, 19);"></i>
+                        <i class="bi-linkedin mx-2 text-white" data-bs-toggle="tooltip" title="linkedin"
+                            title="linkedin" style="font-size: 2rem; color: rgb(9, 12, 19);"></i>
+                    </p>
+                    <p class="text-white">Creer en 2016 infopro offre un emploi à un taux élevé de ces apprenants.</p>
+                </div>
+                <div
+                    class="col-xs-12 col-sm-12 col-md-6 col-lg-3 d-flex justify-content-center align-items-start bg-dark flex-wrap flex-column text-white">
+                    <h5 class="mx-5">Liens utiles</h5><br>
+                    <a class="text-white link-opacity-0 mx-5" href="#" alt="">Spécialités</a><br>
+                    <a class="text-white link-opacity-0 mx-5" href="#" alt="">contact</a><br>
+                    <a class="text-white link-opacity-0 mx-5" href="#" alt="">Fiche de renseignement</a>
+                </div>
+                <div
+                    class="col-xs-12 col-sm-12 col-md-6 col-lg-3 d-flex justify-content-center align-items-start bg-dark  flex-column flex-wrap text-white">
+                    <h5 class="mx-5">Nous contacter</h5>
+                    <p class="text-white link-opacity-0 mx-5" alt="">Nkongsamba (pont cassé Tel: (+237) 699 329 343 /
+                        674 004 597)</p>
+                    <p class="text-white link-opacity-0 mx-5" alt="">Douala (campus logbessou pk 14 Tel: (+237) 699 329
+                        343 / 674 004 597)</p>
+                </div>
+                <div
+                    class="col-xs-12 col-sm-12 col-md-6 col-lg-3 d-flex justify-content-center align-items-start bg-dark  flex-column flex-wrap text-white">
+                    <h5 class="mx-5">Nous contacter</h5>
+                    <p class="text-white link-opacity-0 mx-5" alt="">Bafoussam (total d'en bas Tel: (+237) 690 455 448 /
+                        672 215 266)</p>
+                    <p class="text-white link-opacity-0 mx-5" alt="">Dschang (immeuble commercial bank Tel: (+237) 696
+                        886 310 / 675 414 465)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 d-flex justify-content-center align-items-center bg-dark pb-5 pt-5 text-white">
+        <h5>Copyriht (c) 2024.infoprolareference</h5>
+    </div>
+    <script>
+        document.addEventListener('scroll', () => {
+            if (window.scrollY > 0) {
+                document.getElementById("navbar").style.backgroundColor = "#cccc";
+            } else {
+                document.getElementById("navbar").style.backgroundColor = "transparent"
+            }
+
+        })
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
