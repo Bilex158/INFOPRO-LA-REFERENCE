@@ -49,22 +49,29 @@
                         NOS SPECIALITES
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                        <li><a class="dropdown-item text-dark fw-bold" href="Param%C3%A9dical.html">PARAMEDICAL</a>
+                        <li><a class="dropdown-item text-dark fw-bold"
+                                href="Param%C3%A9dical.html?idParent=0&idEnfant=0">PARAMEDICAL</a>
                         </li>
-                        <li><a class="dropdown-item text-dark fw-bold" href="tic.html">TIC</a></li>
-                        <li><a class="dropdown-item text-dark fw-bold" href="hotell%C3%A9rie.html">HOTELLERIE
+                        <li><a class="dropdown-item text-dark fw-bold"
+                                href="Param%C3%A9dical.html?idParent=1&idEnfant=0">TIC</a>
+                        </li>
+                        <li><a class="dropdown-item text-dark fw-bold"
+                                href="Param%C3%A9dical.html?idParent=2&idEnfant=0">HOTELLERIE
                                 RESTAURATION</a>
                         </li>
                         <li>
                             <hr class="dropdown-divider">
                         </li>
-                        <li><a class="dropdown-item text-dark fw-bold" href="stylisme.html">STYLISME
+                        <li><a class="dropdown-item text-dark fw-bold"
+                                href="Param%C3%A9dical.html?idParent=3&idEnfant=0">STYLISME
                                 MODELISME</a>
                         </li>
-                        <li><a class="dropdown-item text-dark fw-bold" href="esthetique.html">ESTHETIQUE
+                        <li><a class="dropdown-item text-dark fw-bold"
+                                href="Param%C3%A9dical.html?idParent=4&idEnfant=0">ESTHETIQUE
                                 BEAUTE</a>
                         </li>
-                        <li><a class="dropdown-item text-dark fw-bold" href="ma%C3%A7onnerie.html">MACONNERIE</a>
+                        <li><a class="dropdown-item text-dark fw-bold"
+                                href="Param%C3%A9dical.html?idParent=5&idEnfant=0">MACONNERIE</a>
                         </li>
                     </ul>
                 </li>
@@ -373,7 +380,7 @@
         document.addEventListener('scroll', () => {
             if (window.scrollY > 0) {
                 document.getElementById("navbar").style.backgroundColor = "#ffffff";
-                document.getElementsById("navbar").style.shadow = "shadow-sm-p3";
+                document.getElementsById("navbar").style.boxshadow = " 0 1rem 3rem rgba($black, .175)";
             } else {
                 document.getElementById("navbar").style.backgroundColor = "transparent";
                 document.getElementsById("link").style.color = "#ffffff";
